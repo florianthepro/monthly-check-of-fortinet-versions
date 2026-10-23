@@ -5,7 +5,11 @@
     "cves_url": "https://services.nvd.nist.gov/rest/json/cves/2.0",
     "cve_record_url": "https://www.cve.org/CVERecord?id=",
     "fortinet_psirt_url": "https://www.fortiguard.com/psirt",
-    "timeout_seconds": 90
+    "timeout_seconds": 90,
+    "page_size": 100,
+    "max_retries": 5,
+    "retry_delay_seconds": 2,
+    "window_days": 110
   },
   "defaults": {
     "months": 3,
@@ -14,71 +18,107 @@
   "products": {
     "fortios": {
       "label": "FortiOS",
-      "part": "o"
+      "parts": [
+        "o"
+      ]
     },
     "fortimanager": {
       "label": "FortiManager",
-      "part": "a"
+      "parts": [
+        "a",
+        "o"
+      ]
     },
     "fortianalyzer": {
       "label": "FortiAnalyzer",
-      "part": "a"
+      "parts": [
+        "a",
+        "o"
+      ]
     },
     "fortiproxy": {
       "label": "FortiProxy",
-      "part": "a"
+      "parts": [
+        "a"
+      ]
     },
     "fortiswitch": {
       "label": "FortiSwitch",
-      "part": "o"
+      "parts": [
+        "o"
+      ]
     },
     "fortiap": {
       "label": "FortiAP",
-      "part": "o"
+      "parts": [
+        "o"
+      ]
     },
     "forticlient": {
       "label": "FortiClient",
-      "part": "a"
+      "parts": [
+        "a"
+      ]
     },
     "fortiweb": {
       "label": "FortiWeb",
-      "part": "a"
+      "parts": [
+        "a"
+      ]
     },
     "fortimail": {
       "label": "FortiMail",
-      "part": "a"
+      "parts": [
+        "a"
+      ]
     },
     "fortiadc": {
       "label": "FortiADC",
-      "part": "a"
+      "parts": [
+        "a"
+      ]
     },
     "fortiauthenticator": {
       "label": "FortiAuthenticator",
-      "part": "a"
+      "parts": [
+        "a"
+      ]
     },
     "fortisandbox": {
       "label": "FortiSandbox",
-      "part": "a"
+      "parts": [
+        "a"
+      ]
     },
     "fortisiem": {
       "label": "FortiSIEM",
-      "part": "a"
+      "parts": [
+        "a"
+      ]
     },
     "fortisoar": {
       "label": "FortiSOAR",
-      "part": "a"
+      "parts": [
+        "a"
+      ]
     },
     "fortinac": {
       "label": "FortiNAC",
-      "part": "a"
+      "parts": [
+        "a"
+      ]
     },
     "fortiedr": {
       "label": "FortiEDR",
-      "part": "a"
+      "parts": [
+        "a"
+      ]
     },
     "fortipam": {
       "label": "FortiPAM",
-      "part": "a"
+      "parts": [
+        "a"
+      ]
     }
   },
   "systems": [
