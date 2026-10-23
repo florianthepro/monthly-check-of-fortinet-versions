@@ -1,0 +1,109 @@
+{
+  "title": "Monthly Check of Fortinet Versions",
+  "api": {
+    "key": "",
+    "cves_url": "https://services.nvd.nist.gov/rest/json/cves/2.0",
+    "cve_record_url": "https://www.cve.org/CVERecord?id=",
+    "fortinet_psirt_url": "https://www.fortiguard.com/psirt",
+    "timeout_seconds": 90
+  },
+  "defaults": {
+    "months": 3,
+    "yellow_months": 5
+  },
+  "products": {
+    "fortios": {
+      "label": "FortiOS",
+      "part": "o"
+    },
+    "fortimanager": {
+      "label": "FortiManager",
+      "part": "a"
+    },
+    "fortianalyzer": {
+      "label": "FortiAnalyzer",
+      "part": "a"
+    },
+    "fortiproxy": {
+      "label": "FortiProxy",
+      "part": "a"
+    },
+    "fortiswitch": {
+      "label": "FortiSwitch",
+      "part": "o"
+    },
+    "fortiap": {
+      "label": "FortiAP",
+      "part": "o"
+    },
+    "forticlient": {
+      "label": "FortiClient",
+      "part": "a"
+    },
+    "fortiweb": {
+      "label": "FortiWeb",
+      "part": "a"
+    },
+    "fortimail": {
+      "label": "FortiMail",
+      "part": "a"
+    },
+    "fortiadc": {
+      "label": "FortiADC",
+      "part": "a"
+    },
+    "fortiauthenticator": {
+      "label": "FortiAuthenticator",
+      "part": "a"
+    },
+    "fortisandbox": {
+      "label": "FortiSandbox",
+      "part": "a"
+    },
+    "fortisiem": {
+      "label": "FortiSIEM",
+      "part": "a"
+    },
+    "fortisoar": {
+      "label": "FortiSOAR",
+      "part": "a"
+    },
+    "fortinac": {
+      "label": "FortiNAC",
+      "part": "a"
+    },
+    "fortiedr": {
+      "label": "FortiEDR",
+      "part": "a"
+    },
+    "fortipam": {
+      "label": "FortiPAM",
+      "part": "a"
+    }
+  },
+  "systems": [
+    {
+      "id": "X.X.X",
+      "name": "Firewall X",
+      "product": "fortios",
+      "portal_url": "https://url.to.fortimanager/",
+      "portal": "FortiManager X",
+      "access": [
+        "konto X benötigt",
+        "ADOM: X",
+        "goto Device Manager > Device & Groups > Managed Fortigate"
+      ]
+    },
+    {
+      "id": "X.X.X",
+      "name": "FortiAnalyzer X",
+      "product": "fortianalyzer",
+      "portal_url": "https://url.to.fortianalyzer/",
+      "access": [
+        "konto X benötigt",
+        "ADOM: root",
+        "klick on adm<username>(top-right)"
+      ]
+    }
+  ]
+}
