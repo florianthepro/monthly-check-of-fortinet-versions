@@ -1,4 +1,4 @@
-<?php
+<?php 
 declare(strict_types=1);
 const DATA = __DIR__ . '/data', REPORTS = DATA . '/reports', ATTRS = DATA . '/attributes', CVES = DATA . '/cves', LINKS = __DIR__ . '/link';
 foreach ([DATA, REPORTS, ATTRS, CVES, LINKS] as $d)
